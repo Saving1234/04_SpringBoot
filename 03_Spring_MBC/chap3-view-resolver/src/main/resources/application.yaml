@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: chap3-view-resolver
+
+thymleaf:
+    prefix: classpath:/templates/
+    suffix: .html

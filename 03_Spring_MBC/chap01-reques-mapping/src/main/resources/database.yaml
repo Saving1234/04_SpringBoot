@@ -1,0 +1,16 @@
+# 여기선 apllication을 읽어와서 설정.
+# 배포할 때는 이걸로 바꿔서.
+
+#스프링 프레임워크 관련 설정.
+spring:
+  #어플리케이션 설정.
+  application:
+    #어플리케이션의 이름.
+    name: chap01-reques-mapping
+
+
+    #내장 톰캣 관련 설정.
+server:
+  port: 8081
+
+      #url, 데이터베이스 접근 커넥션 정보도 여기서 설정.
