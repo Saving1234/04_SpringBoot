@@ -71,7 +71,6 @@ public class SessionBodyController {
     public String logout(HttpSession session) {
 
         session.invalidate();
-        session.removeAttribute(session.);
         return "redirect:/session/home";
 
 

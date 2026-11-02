@@ -63,7 +63,7 @@ public class ReservationController {
 
         String result = reservation.getApplicant() + "님의" + reservation.getRoomName() + "예약이 완료되었습니다.";
 
-        redirectAttributes.addFlashAttribute(result);
+        redirectAttributes.addFlashAttribute("flashName",result);
 
         return "redirect:/reservations/complete";
 

@@ -83,7 +83,9 @@ public class ParameterController {
      *       keyword 누락 또는 숫자가 아닌 page=abc -> HTTP 400
      */
     @GetMapping("search")
-    public String search(String keyword, @RequestParam(defaultValue = "1")int page, @RequestParam(required = false) String tag, Model model) {
+    public String search(@RequestParam(value = "keyword", required = true) String keyword, @RequestParam(defaultValue = "1")int page, @RequestParam(required = false) String tag, Model model) {
+
+
 
         model.addAttribute("keyword", keyword);
         model.addAttribute("page", page);
