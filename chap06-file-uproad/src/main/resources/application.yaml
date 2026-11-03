@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: chap06-file-uproad
+  servlet:
+    #Multipart : 파일 업로드 관련설정
+    multipart:
+      max-file-size: 10MB #파일 하나의 최대 크기를 1kb
+      max-request-size: 10MB # 요청당 최대 크기를 10MB
+file:
+  upload:
+    windows:
+      path: C:/bear/uploadedFiles
+    mac:
+      path: /myWs/uploadedFiles

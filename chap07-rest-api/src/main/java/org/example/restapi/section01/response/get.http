@@ -1,0 +1,26 @@
+### 1. GET re
+GET https://localhost:8080/response/hello
+
+### 2. random
+
+
+###
+GET http://localhost:8080/response/message
+###
+GET http://localhost:8080/response/list
+###
+GET http://localhost:8080/response/map
+###
+GET http://localhost:8080/response/message
+
+###
+GET http://localhost:8080/response/entity
+
+###
+GET http://localhost:8080/entity/users
+
+###
+GET http://localhost:8080/entity/users/{{1}}
+
+###
+DELETE http://localhost:8080/entity/users/{{userNo}}

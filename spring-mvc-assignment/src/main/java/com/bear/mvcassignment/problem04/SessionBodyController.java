@@ -51,7 +51,8 @@ public class SessionBodyController {
     @PostMapping("login")
     public String login(@RequestParam("nickname") String nickname, HttpSession session) {
 
-        session.setAttribute("nickName", nickname);
+        session.setAttribute("nickname", nickname);
+        System.out.println("김학생 로그인함");
 
         return "redirect:/session/home";
 

@@ -8,16 +8,24 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfiguration implements WebMvcConfigurer {
 
     private final logInterceptor logInterceptor;
+    private final SessionInterceptor sessionInterceptor;
 
-    public WebConfiguration(logInterceptor logInterceptor) {
+
+    public WebConfiguration(logInterceptor logInterceptor, SessionInterceptor sessionInterceptor) {
         this.logInterceptor = logInterceptor;
+        this.sessionInterceptor = sessionInterceptor;
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
+
+
         registry.addInterceptor(logInterceptor)
                 .addPathPatterns("/*");
+
+        registry.addInterceptor(sessionInterceptor)
+                .
 
     }
 }
