@@ -1,7 +1,6 @@
-package org.example.restapi.section02;
+package org.example.restapi.section05.swagger;
 
 import lombok.*;
-import org.springframework.web.service.annotation.GetExchange;
 
 import java.util.Date;
 

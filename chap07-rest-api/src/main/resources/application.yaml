@@ -1,3 +1,15 @@
 spring:
   application:
     name: chap07-rest-api
+
+  springdoc:
+    api-docs:
+      path: /v1/api-docs #url 설정., 커스텀 UI를 만들거나 다른 도구와 연동할 떄 사용(JSON으로 된 데이터 주소)
+    swagger-ui:
+      path: /swagger-ui.html # 이경로로 브라우저에 들어가면 됨.
+
+      display-request-duration: true
+      #메소드 순서로 정렬.
+      operations-sorter:  method
+
+

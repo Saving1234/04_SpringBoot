@@ -1,8 +1,9 @@
-package org.example.restapi.section02;
+package org.example.restapi.section04;
 
 import lombok.*;
 
 import java.util.Map;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
