@@ -52,7 +52,7 @@ public class MenuService {
     //entity는 영속 상태. -> 변경이 발생하면 DB에 반영. JDBC와 동기화.
     //언제 바꿔줄거냐. 트렌젝션을 이용해서 바꿔줄 시간을 정해주나?
     //트렌젝션이 끝나면 영속상태의 객체 변화를 DataBase에 반영.
-    @Transactional
+    //@Transactional
     public MenuResponseDTO update(Integer menuCode, MenuRequestDTO request) {
 
         // id 로 수정할 메뉴 정보 찾아오기
