@@ -16,7 +16,7 @@ import lombok.Setter;
 public class IdentityMember {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  //Auto_increament
     @Column(name = "member_no")
     private int memberNo;
 
